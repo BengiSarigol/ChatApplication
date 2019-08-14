@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".ChatAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/ust"
+        android:layout_alignParentTop="true"
+         android:orientation="horizontal"
+
+
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.07"
+            android:background="@drawable/backk"
+
+            android:id="@+id/backimage"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/chatusername"/>
+
+    </LinearLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chatrecycler"
+
+    android:layout_above="@+id/alt"
+    android:layout_below="@+id/ust"
+    ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/alt"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+
+
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:hint="Mesaj giriniz"
+            android:layout_marginRight="35dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:backgroundTint="#1E90FF"
+            android:id="@+id/chatedittext"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/send3"
+
+            android:id="@+id/sendimage"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
